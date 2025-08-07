@@ -54,6 +54,5 @@ public class MainActivity extends AppCompatActivity {
     private void navigateToMain() {
         Intent intent = new Intent(MainActivity.this, Cards_Principal.class);
         startActivity(intent);
-
     }
 }

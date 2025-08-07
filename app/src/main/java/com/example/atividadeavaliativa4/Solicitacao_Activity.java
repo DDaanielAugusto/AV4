@@ -17,7 +17,7 @@ public class Solicitacao_Activity  extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.solicitacao_activity);
 
-        this.solicitar = findViewById(R.id.btnSolicitar);
+        this.solicitar = findViewById(R.id.solicitar);
 
         String solicitacao  = getIntent().getStringExtra("solicitacao-pedido");
 

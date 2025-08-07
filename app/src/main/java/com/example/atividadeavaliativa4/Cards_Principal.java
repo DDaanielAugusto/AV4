@@ -18,7 +18,7 @@ public class Cards_Principal extends AppCompatActivity {
     private ItemAdapter adapter;
 
     // Lista que armazenará os itens
-    private List<PrincipalActivity> ItensPizza;
+    private List<Pizza> ItensPizza;
 
     @SuppressLint({"WrongViewCast", "MissingInflatedId"})
     @Override
@@ -35,13 +35,13 @@ public class Cards_Principal extends AppCompatActivity {
         ItensPizza = new ArrayList<>();
 
         // Adiciona pizzas (com imagem, título, ingredientes e valor) à lista
-        ItensPizza.add(new PrincipalActivity(R.drawable.pizza, "Pizza Portuguesa", "Molhos, tomate, cebola, azeitona", "R$35,19"));
-        ItensPizza.add(new PrincipalActivity(R.drawable.pizza2, "Pizza Calabresa e Queijo", "Molho, calabresa, queiro, cebola e temperos.", "R$47,59"));
-        ItensPizza.add(new PrincipalActivity(R.drawable.pizza3, "Pizza Quatro Queijos", "Queijo calabresa, mineiro, italiano, francês", "R$66,99"));
-        ItensPizza.add(new PrincipalActivity(R.drawable.pizza4, "PizzaCatupiry e Calabrsa", "Calabresa, cheddar, catupiry e molhos", "R$45,99"));
+        ItensPizza.add(new Pizza(R.drawable.pizza, "Pizza Portuguesa", "Molhos, tomate, cebola, azeitona", "R$35,19"));
+        ItensPizza.add(new Pizza(R.drawable.pizza2, "Pizza Calabresa e Queijo", "Molho, calabresa, queiro, cebola e temperos.", "R$47,59"));
+        ItensPizza.add(new Pizza(R.drawable.pizza3, "Pizza Quatro Queijos", "Queijo calabresa, mineiro, italiano, francês", "R$66,99"));
+        ItensPizza.add(new Pizza(R.drawable.pizza4, "PizzaCatupiry e Calabrsa", "Calabresa, cheddar, catupiry e molhos", "R$45,99"));
 
         // Cria o adapter passando o contexto (this) e a lista de pizzas
-        adapter = new ItemAdapter(this, ItensPizza);
+        adapter = new ItemAdapter(ItensPizza);
 
         // Define o adapter no RecyclerView, ligando os dados à interface
         recyclerView.setAdapter(adapter);

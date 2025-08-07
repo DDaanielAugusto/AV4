@@ -1,6 +1,6 @@
 package com.example.atividadeavaliativa4;
 
-public class PrincipalActivity {
+public class Pizza {
 
     //Declarações de atributos privados que armazenam o ID do recurso
     private int imagem;
@@ -12,7 +12,7 @@ public class PrincipalActivity {
 
     // Construtor da classe PrinciplaActivity
     // Recebe como parâmetros o ID de imagem, titulo, ingredientes e valor
-    public PrincipalActivity(int imagem_id, String titulo_id, String ingredientes_id, String valor_id){
+    public Pizza(int imagem_id, String titulo_id, String ingredientes_id, String valor_id){
         this.imagem = imagem_id;
         this.titulo = titulo_id;
         this.ingredientes = ingredientes_id;
